@@ -1,0 +1,810 @@
+/* =========================================
+   LOGIFY - GLOBAL STYLES
+========================================= */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f6f9fd;
+  color: #172033;
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+}
+
+
+/* =========================================
+   NAVBAR - ALL PAGES
+========================================= */
+
+.navbar {
+  width: 100%;
+  min-height: 75px;
+  padding: 0 8%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #ffffff;
+  border-bottom: 1px solid #e4ebf4;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo {
+  font-size: 28px;
+  font-weight: 800;
+  color: #0757c9;
+  letter-spacing: 1px;
+}
+
+.navbar nav {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.navbar nav a {
+  color: #24344d;
+  font-size: 15px;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.navbar nav a:hover {
+  color: #0757c9;
+}
+
+.menu-btn {
+  display: none;
+  border: none;
+  background: none;
+  color: #0757c9;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+
+/* =========================================
+   GENERAL STYLES
+========================================= */
+
+.small-title {
+  color: #0757c9;
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.section-heading {
+  max-width: 750px;
+  margin: 0 auto 50px;
+  text-align: center;
+}
+
+.section-heading h2 {
+  color: #0757c9;
+  font-size: 38px;
+  margin-bottom: 15px;
+}
+
+.section-heading p:last-child {
+  color: #68778c;
+}
+
+
+/* =========================================
+   BUTTONS - ALL PAGES
+========================================= */
+
+.btn {
+  display: inline-block;
+  padding: 13px 25px;
+  border-radius: 7px;
+  font-weight: 700;
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+
+.primary-btn {
+  background: #0757c9;
+  color: #ffffff;
+}
+
+.primary-btn:hover {
+  background: #043e91;
+  transform: translateY(-2px);
+}
+
+.secondary-btn {
+  background: #ffffff;
+  color: #0757c9;
+}
+
+.secondary-btn:hover {
+  background: #eaf3ff;
+  transform: translateY(-2px);
+}
+
+
+/* =========================================
+   HOME PAGE - HERO
+========================================= */
+
+.hero {
+  min-height: 650px;
+  padding: 100px 8%;
+  display: flex;
+  align-items: center;
+  color: #ffffff;
+  background: linear-gradient(
+    135deg,
+    #043e91,
+    #0878ed
+  );
+}
+
+.hero-content {
+  max-width: 750px;
+}
+
+.hero .small-title {
+  color: #c9e4ff;
+}
+
+.hero h1 {
+  font-size: 58px;
+  line-height: 1.15;
+  margin: 15px 0 25px;
+}
+
+.hero p {
+  max-width: 650px;
+  font-size: 18px;
+  color: #f1f7ff;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 15px;
+  margin-top: 30px;
+}
+
+
+/* =========================================
+   HOME PAGE - SERVICES
+========================================= */
+
+.services-intro {
+  padding: 90px 8%;
+  background: #ffffff;
+}
+
+.card-grid {
+  max-width: 1100px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.card {
+  padding: 35px;
+  background: #f6f9fd;
+  border: 1px solid #e1e9f3;
+  border-radius: 15px;
+  text-align: center;
+  transition: 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-7px);
+  box-shadow: 0 15px 35px rgba(20, 60, 110, 0.12);
+}
+
+.card-icon {
+  font-size: 50px;
+  margin-bottom: 15px;
+}
+
+.card h3 {
+  color: #0757c9;
+  font-size: 21px;
+  margin-bottom: 12px;
+}
+
+.card p {
+  color: #66758a;
+  margin-bottom: 20px;
+}
+
+
+/* =========================================
+   HOME PAGE - WHY CHOOSE US
+========================================= */
+
+.why-us {
+  padding: 90px 8%;
+  background: #f6f9fd;
+}
+
+.why-grid {
+  max-width: 1100px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+}
+
+.why-card {
+  padding: 30px;
+  background: #ffffff;
+  border: 1px solid #e1e9f3;
+  border-radius: 14px;
+  text-align: center;
+  transition: 0.3s ease;
+}
+
+.why-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 30px rgba(20, 60, 110, 0.1);
+}
+
+.why-icon {
+  font-size: 40px;
+  margin-bottom: 15px;
+}
+
+.why-card h3 {
+  color: #0757c9;
+  margin-bottom: 10px;
+}
+
+.why-card p {
+  color: #66758a;
+}
+
+
+/* =========================================
+   HOME PAGE - PRODUCTS PREVIEW
+========================================= */
+
+.products-section {
+  padding: 90px 8%;
+  background: #ffffff;
+}
+
+
+/* =========================================
+   HOME PAGE - CALL TO ACTION
+========================================= */
+
+.cta {
+  padding: 90px 8%;
+  text-align: center;
+  color: #ffffff;
+  background: #0757c9;
+}
+
+.cta-content {
+  max-width: 700px;
+  margin: auto;
+}
+
+.cta .small-title {
+  color: #c9e4ff;
+}
+
+.cta h2 {
+  font-size: 40px;
+  margin-bottom: 15px;
+}
+
+.cta p {
+  margin-bottom: 30px;
+  color: #f1f7ff;
+}
+
+.cta .primary-btn {
+  background: #ffffff;
+  color: #0757c9;
+}
+
+.cta .primary-btn:hover {
+  background: #eaf3ff;
+}
+
+
+/* =========================================
+   PRODUCTS PAGE - PAGE HEADER
+========================================= */
+
+.page-header {
+  min-height: 420px;
+  padding: 70px 8%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #ffffff;
+  background: linear-gradient(
+    135deg,
+    #043e91,
+    #0878ed
+  );
+}
+
+.page-header-content {
+  max-width: 800px;
+}
+
+.page-header .small-title {
+  color: #c9e4ff;
+}
+
+.page-header h1 {
+  font-size: 50px;
+  line-height: 1.2;
+  margin: 15px 0 20px;
+}
+
+.page-header p {
+  font-size: 17px;
+}
+
+
+/* =========================================
+   PRODUCTS PAGE - PRODUCTS
+========================================= */
+
+.products-section {
+  padding: 80px 8%;
+  background: #f6f9fd;
+}
+
+.product-grid {
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.product-card {
+  background: #ffffff;
+  border: 1px solid #e1e9f3;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(20, 60, 110, 0.08);
+  transition: 0.3s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-7px);
+  box-shadow: 0 18px 40px rgba(20, 60, 110, 0.15);
+}
+
+.product-image {
+  height: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #eaf3ff;
+  font-size: 65px;
+}
+
+.product-info {
+  padding: 28px;
+}
+
+.product-category {
+  display: inline-block;
+  color: #0757c9;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+}
+
+.product-info h3 {
+  font-size: 21px;
+  line-height: 1.35;
+  color: #172033;
+  margin-bottom: 12px;
+}
+
+.product-info p {
+  color: #66758a;
+  font-size: 15px;
+  margin-bottom: 20px;
+}
+
+.product-price {
+  color: #0757c9;
+  font-size: 24px;
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+
+
+/* =========================================
+   PRODUCTS PAGE - BULK ORDER
+========================================= */
+
+.order-section {
+  padding: 80px 8%;
+  text-align: center;
+  color: #ffffff;
+  background: #0757c9;
+}
+
+.order-content {
+  max-width: 700px;
+  margin: auto;
+}
+
+.order-content .small-title {
+  color: #c9e4ff;
+}
+
+.order-content h2 {
+  font-size: 38px;
+  margin-bottom: 15px;
+}
+
+.order-content p {
+  margin-bottom: 28px;
+}
+
+.order-section .primary-btn {
+  background: #ffffff;
+  color: #0757c9;
+}
+
+.order-section .primary-btn:hover {
+  background: #eaf3ff;
+}
+
+
+/* =========================================
+   CONTACT PAGE - HERO
+========================================= */
+
+.contact-hero {
+  min-height: 430px;
+  padding: 80px 8%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #ffffff;
+  background: linear-gradient(
+    135deg,
+    #043e91,
+    #0878ed
+  );
+}
+
+.contact-hero-content {
+  max-width: 800px;
+}
+
+.contact-hero .small-title {
+  color: #c9e4ff;
+}
+
+.contact-hero h1 {
+  font-size: 52px;
+  line-height: 1.2;
+  margin: 15px 0 20px;
+}
+
+.contact-hero p {
+  font-size: 18px;
+  color: #f1f7ff;
+}
+
+
+/* =========================================
+   CONTACT PAGE - CONTACT CARDS
+========================================= */
+
+.contact-section {
+  padding: 90px 8%;
+  background: #ffffff;
+}
+
+.contact-details {
+  max-width: 1100px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.contact-card {
+  padding: 40px 30px;
+  text-align: center;
+  background: #f6f9fd;
+  border: 1px solid #e1e9f3;
+  border-radius: 15px;
+  transition: 0.3s ease;
+}
+
+.contact-card:hover {
+  transform: translateY(-7px);
+  box-shadow: 0 15px 35px rgba(20, 60, 110, 0.12);
+}
+
+.contact-icon {
+  font-size: 50px;
+  margin-bottom: 15px;
+}
+
+.contact-card h3 {
+  color: #0757c9;
+  font-size: 23px;
+  margin-bottom: 12px;
+}
+
+.contact-card p {
+  color: #637086;
+  margin-bottom: 25px;
+  word-break: break-word;
+}
+
+
+/* =========================================
+   CONTACT PAGE - SUPPORT
+========================================= */
+
+.contact-support {
+  padding: 90px 8%;
+  text-align: center;
+  color: #ffffff;
+  background: #0757c9;
+}
+
+.contact-support-content {
+  max-width: 750px;
+  margin: auto;
+}
+
+.contact-support .small-title {
+  color: #c9e4ff;
+}
+
+.contact-support h2 {
+  font-size: 40px;
+  margin-bottom: 15px;
+}
+
+.contact-support p {
+  font-size: 17px;
+  margin-bottom: 30px;
+  color: #f1f7ff;
+}
+
+
+/* =========================================
+   FOOTER - ALL PAGES
+========================================= */
+
+footer {
+  padding: 60px 8% 20px;
+  text-align: center;
+  background: #071a33;
+  color: #ffffff;
+}
+
+.footer-content h3 {
+  color: #55a9ff;
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.footer-content p {
+  color: #c7d3e3;
+  margin-bottom: 7px;
+}
+
+.copyright {
+  max-width: 1200px;
+  margin: 35px auto 0;
+  padding-top: 20px;
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.copyright p {
+  color: #91a2b8;
+  font-size: 13px;
+}
+
+
+/* =========================================
+   TABLET RESPONSIVE
+========================================= */
+
+@media (max-width: 950px) {
+
+  .hero h1 {
+    font-size: 48px;
+  }
+
+  .page-header h1 {
+    font-size: 42px;
+  }
+
+  .contact-hero h1 {
+    font-size: 44px;
+  }
+
+  .card-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .why-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .product-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .contact-details {
+    grid-template-columns: 1fr;
+    max-width: 600px;
+  }
+
+}
+
+
+/* =========================================
+   MOBILE RESPONSIVE
+========================================= */
+
+@media (max-width: 650px) {
+
+  .navbar {
+    padding: 0 5%;
+  }
+
+  .menu-btn {
+    display: block;
+  }
+
+  .navbar nav {
+    display: none;
+    position: absolute;
+    top: 75px;
+    left: 0;
+    width: 100%;
+    padding: 25px;
+    flex-direction: column;
+    gap: 20px;
+    background: #ffffff;
+    border-bottom: 1px solid #e4ebf4;
+  }
+
+  .navbar nav.active {
+    display: flex;
+  }
+
+
+  /* HOME */
+
+  .hero {
+    min-height: 600px;
+    padding: 80px 5%;
+  }
+
+  .hero h1 {
+    font-size: 38px;
+  }
+
+  .hero p {
+    font-size: 16px;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+
+  /* GENERAL */
+
+  .section-heading h2 {
+    font-size: 30px;
+  }
+
+
+  /* HOME SECTIONS */
+
+  .services-intro,
+  .why-us,
+  .products-section,
+  .cta,
+  .contact-section,
+  .contact-support {
+    padding: 60px 5%;
+  }
+
+  .card-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .why-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .cta h2 {
+    font-size: 30px;
+  }
+
+
+  /* PRODUCTS */
+
+  .page-header {
+    min-height: 380px;
+    padding: 60px 5%;
+  }
+
+  .page-header h1 {
+    font-size: 34px;
+  }
+
+  .product-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .product-info {
+    padding: 25px;
+  }
+
+  .order-section {
+    padding: 60px 5%;
+  }
+
+  .order-content h2 {
+    font-size: 30px;
+  }
+
+
+  /* CONTACT */
+
+  .contact-hero {
+    min-height: 380px;
+    padding: 60px 5%;
+  }
+
+  .contact-hero h1 {
+    font-size: 36px;
+  }
+
+  .contact-hero p {
+    font-size: 16px;
+  }
+
+  .contact-support h2 {
+    font-size: 30px;
+  }
+
+  .contact-card {
+    padding: 35px 25px;
+  }
+
+}
